@@ -26,6 +26,7 @@ func main() {
 		ReadTimeout:  15 * time.Second,
 	}
 	log.Println("Server working")
+	setGrpc()
 	log.Fatal(server.ListenAndServe())
 }
 
